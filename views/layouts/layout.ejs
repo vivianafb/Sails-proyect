@@ -107,6 +107,15 @@
 
     <!--SCRIPTS-->
     <script src="/dependencies/sails.io.js"></script>
+    
     <!--SCRIPTS END-->
+    <script>
+      io.socket.get('/libros',(resData,jwres)=>{
+        console.log("RESDATA")
+        console.log(resData);
+        console.log("jwres")
+        console.log(jwres)
+      })
+    </script>
   </body>
 </html>
